@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Result</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/8239c8ac41.js" crossorigin="anonymous"></script>
+    <style>
+    @import url('https://fonts.googleapis.com/css?family=Dancing+Script|Lato&display=swap');
+
+        html,
+        body {
+            min-height: 100%;
+            min-width: 100%;
+            font-family: 'Lato', sans-serif;
+            background-color: #D1D7DC;
+
+        }
+
+        .result{
+        	margin: 0;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			-ms-transform: translate(-50%, -50%);
+			transform: translate(-50%, -50%);
+			max-width: 700px;
+			background-color: #fff;
+			padding: 1em;
+			border-radius: 0.25em;
+			border:1px solid #e2e2e2;
+        }
+
+        .score{
+        	width: 100%;
+        	text-align: center;
+        }
+
+
+        .grade{
+        	width: 100%;
+        	text-align: center;
+        	color: red;
+        	margin: 0px;
+        }
+
+        .grade h1{
+        	font-size: 30vh!important;
+        }
+
+        .detail{
+        	width: 100%;
+        	text-align: center;
+        	display: flex;
+        	justify-content: center;
+        }
+
+        .detail .correct{
+        	margin-right: 100px;
+        }
+
+        .fa-check-circle{
+        	color: green;
+        }
+
+        .fa-times-circle{
+        	color: red;
+        }
+
+        .margin0{
+        	margin: 0!important;
+        }
+
+        .center{
+        	text-align: center;
+        }
+
+        .navbar {}
+        
+        .navbar-bg-white {
+            background-color: #fff;
+            border-bottom: 1px solid #e2e2e2;
+        }
+        
+        .logo {
+            text-align: left;
+            margin: 0px 0px 0px 10px;
+            font-size: 2.5vw;
+            color: #fe8c00;
+            background-image: linear-gradient(92deg, #f35626 0%, #feab3a 100%);
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+            font-weight: bolder;
+            font-family: 'Dancing Script', cursive;
+        }
+
+        .home{
+    	margin: 0;
+			position: absolute;
+			bottom: 1em;
+			right:0;
+			-ms-transform: translate(-50%, -50%);
+			transform: translate(-50%, -50%);
+
+    }
+
+    .textAlign{
+    	text-align: center;
+    }
+
+    .homeBtn{
+    	background-color: white;
+    	color: #303946;
+    	border:0;
+    	padding: 0.6em 1em;
+    	border-radius: 0.25em;
+    	border:1px solid #303946;
+    }
+
+    .homeBtn:hover:not(active){
+    	background-color: #303946;
+    	color: white;
+    	
+    }
+
+    .Baseline {
+  		vertical-align: text-bottom;
+	}
+
+    </style>
+</head>
+
+<body>
+
+	<nav class="navbar navbar-bg-white navbar-fixed">
+        <a href="#" class="navbar-brand logo margin0">NoobtoDev</a>
+        </div>
+    </nav>
+
+	<div class="result">
+		<div class="score">
+			<h3 class="margin0">Final Score : 0/5</h3>
+		</div>
+
+		<div class="grade">
+			<h1 class="margin0">F</h1>
+		</div>
+		<strong><p class="center">Better luck next time!</p></strong>
+
+		<div class="detail">
+			<div class="correct">
+				<h3>Answers  0  <i class="far fa-check-circle"></i></h3>
+			</div>
+
+			<div class="incorrect">
+				<h3>Answers  5  <i class="far fa-times-circle"></i></h3>
+			</div>
+		</div>
+	</div>
+
+	<div class="home">
+		<button class="homeBtn">
+			<h4 class="margin0"><i class="fas fa-level-down-alt fa-rotate-90 Baseline"></i>&nbsp;&nbsp;&nbsp;Back to home</h4>
+		</button>
+	</div>
+</body>
+
+</html>
