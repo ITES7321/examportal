@@ -79,10 +79,6 @@
 	color: #fff;
 }
 
-.inputGroup1 input:checked ~ label {
-	color: #fff;
-}
-
 .inputGroup input:checked ~ label:before {
 	transform: translate(-50%, -50%) scale3d(56, 56, 1);
 	opacity: 1;
@@ -286,7 +282,7 @@ code {
     <form class="form">
 
         
-        <div class="inputGroup inputGroup1" onclick="enable()">
+        <div class="inputGroup" onclick="enable()">
             <input id="radio1" name="radio" type="radio" />
             <label for="radio1" id="option1"></label>
         </div>
@@ -358,7 +354,6 @@ code {
 			{
 				$('#next').trigger('click');
 			}
-			$('.inputGroup1').trigger('click');
 		}
 
 		function enable()
@@ -371,6 +366,7 @@ code {
     	
 		function load()  
 		{  
+			$('.form')[0].reset();
 			timer=30;
 			if(i==1)
 			{
